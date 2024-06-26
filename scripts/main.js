@@ -13,21 +13,27 @@ document.addEventListener('DOMContentLoaded', () => {
     renderer.setSize(window.innerWidth, 300);
     canvasContainer.appendChild(renderer.domElement);
 
-    const geometry = new THREE.BoxGeometry();
-    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-    const cube = new THREE.Mesh(geometry, material);
-    scene.add(cube);
+    const light = new THREE.DirectionalLight(0xffffff, 1);
+    light.position.set(0, 1, 1).normalize();
+    scene.add(light);
+
+    const loader = new THREE.GLTFLoader();
+    loader.load('models/revolver_magnum_357.glb', (gltf) => {
+        const model = gltf.scene;
+        model.scale.set(2, 2, 2); // Scale the model
+        scene.add(model);
+
+        function animate() {
+            requestAnimationFrame(animate);
+            model.rotation.x += 0.01;
+            model.rotation.y += 0.01;
+            renderer.render(scene, camera);
+        }
+
+        animate();
+    }, undefined, (error) => {
+        console.error('An error happened while loading the model:', error);
+    });
 
     camera.position.z = 5;
-
-    const animate = function () {
-        requestAnimationFrame(animate);
-
-        cube.rotation.x += 0.01;
-        cube.rotation.y += 0.01;
-
-        renderer.render(scene, camera);
-    };
-
-    animate();
 });

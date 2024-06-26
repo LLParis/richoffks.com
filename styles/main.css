@@ -1,7 +1,7 @@
 /* Import the Art Dystopia II font */
 @font-face {
     font-family: 'Art Dystopia';
-    src: url('../fonts/ArtDystopia II.otf') format('opentype');
+    src: url('../fonts/ArtDystopia%20II.otf') format('opentype');
 }
 
 /* Base styles for the body */
@@ -52,6 +52,7 @@ nav ul li a:hover {
 
 /* Styles for the main header text */
 h1 {
+    position: relative;
     font-family: 'Art Dystopia', cursive; /* Custom font */
     color: #ffffff; /* Text color */
     font-size: 8em; /* Increased font size */
@@ -206,7 +207,10 @@ button:hover {
     }
 
     h1 {
-        font-size: 5em; /* Smaller font size for smaller screens */
+        font-size: 4em; /* Smaller font size for smaller screens */
+        white-space: nowrap; /* Prevents text wrapping */
+        overflow: hidden; /* Ensures text does not overflow */
+        text-overflow: ellipsis; /* Adds ellipsis if text overflows */
     }
 
     h2 {
@@ -217,4 +221,39 @@ button:hover {
         font-size: 0.8em; /* Smaller font size for smaller screens */
         padding: 8px 16px; /* Smaller padding for smaller screens */
     }
+}
+/* Styles for the vertical carousel */
+.carousel {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel .carousel-item {
+    margin: 10px;
+}
+
+.carousel video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Styles for additional content */
+.show-tickets, .updates {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.show-tickets h3, .updates h3 {
+    font-family: 'Art Dystopia', cursive;
+    color: #ffffff;
+}
+
+.show-tickets p, .updates p {
+    color: #ffffff;
 }

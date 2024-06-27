@@ -8,92 +8,86 @@
 body {
     margin: 0;
     padding: 0;
-    background: url('../images/background.jpg') no-repeat center center fixed; /* Background image */
-    background-size: cover; /* Ensure the background image covers the entire screen */
-    color: #ffffff; /* Text color */
-    font-family: 'Montserrat', sans-serif; /* Base font family */
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 /* Styles for the header */
 header {
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     text-align: center;
-    position: sticky; /* Stick to the top on scroll */
+    position: sticky;
     top: 0;
-    z-index: 1000; /* Ensure it stays above other elements */
+    z-index: 1000;
 }
 
-/* Navigation styles */
 nav ul {
-    list-style: none; /* Remove default list styling */
+    list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
-    animation: slideIn 1s ease-out; /* Slide-in animation */
+    animation: slideIn 1s ease-out;
 }
 
 nav ul li {
-    margin: 0 15px; /* Spacing between items */
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #ffffff; /* Link color */
+    color: #ffffff;
     text-decoration: none;
-    font-size: 1.2em; /* Font size */
-    font-family: 'Art Dystopia', cursive; /* Custom font */
-    transition: color 0.3s; /* Smooth color transition */
+    font-size: 1.2em;
+    font-family: 'Art Dystopia', cursive;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #dddddd; /* Change color on hover */
+    color: #dddddd;
 }
 
-/* Styles for the main header text */
 h1 {
     position: relative;
-    font-family: 'Art Dystopia', cursive; /* Custom font */
-    color: #ffffff; /* Text color */
-    font-size: 8em; /* Increased font size */
+    font-family: 'Art Dystopia', cursive;
+    color: #ffffff;
+    font-size: 8em;
     margin: 0;
-    padding: 20px; /* Add padding for more space around the text */
-    width: 100%; /* Make the header take the full width of its container */
-    text-align: center; /* Center the text within the full width */
-    letter-spacing: 0.1em; /* Adjust the letter spacing to make the text appear wider */
-    animation: fadeIn 2s ease-out; /* Fade-in animation */
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    animation: fadeIn 2s ease-out;
 }
 
-/* Styles for section headers */
 h2 {
-    color: #ffffff; /* Text color */
-    font-family: 'Art Dystopia', cursive; /* Custom font */
-    font-size: 3em; /* Font size */
+    color: #ffffff;
+    font-family: 'Art Dystopia', cursive;
+    font-size: 3em;
     margin: 20px 0;
-    animation: fadeIn 2s ease-out; /* Fade-in animation */
+    animation: fadeIn 2s ease-out;
 }
 
-/* Styles for the main content area */
 main {
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
-    border-radius: 15px; /* Rounded corners */
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
 }
 
-/* Styles for sections */
 section {
     position: relative;
     margin-bottom: 40px;
     padding: 20px;
-    background: linear-gradient(135deg, #222, #111); /* Gradient background */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Box shadow */
-    transform: translateY(30px); /* Initial position for animation */
-    opacity: 0; /* Initial opacity for animation */
-    animation: fadeInUp 1s forwards; /* Fade-in-up animation */
+    background: linear-gradient(135deg, #222, #111);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transform: translateY(30px);
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
 }
 
-/* Styles for section background blur effect */
 section:before {
     content: '';
     position: absolute;
@@ -102,71 +96,64 @@ section:before {
     right: -10px;
     bottom: -10px;
     z-index: -1;
-    background: linear-gradient(135deg, #333, #222); /* Gradient background */
-    border-radius: 20px; /* Rounded corners */
-    transform: scale(1.05); /* Slightly larger for blur effect */
-    filter: blur(15px); /* Blur effect */
+    background: linear-gradient(135deg, #333, #222);
+    border-radius: 20px;
+    transform: scale(1.05);
+    filter: blur(15px);
 }
 
-/* Styles for the footer */
 footer {
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 10px;
     text-align: center;
-    animation: fadeIn 1.5s ease-out; /* Fade-in animation */
+    animation: fadeIn 1.5s ease-out;
 }
 
-/* Styles for lists */
 ul {
-    list-style: none; /* Remove default list styling */
+    list-style: none;
     padding: 0;
-    animation: fadeInUp 1s forwards; /* Fade-in-up animation */
+    animation: fadeInUp 1s forwards;
 }
 
 li {
-    margin: 10px 0; /* Spacing between items */
+    margin: 10px 0;
 }
 
-/* Styles for links */
 a {
-    color: #ffffff; /* Link color */
-    text-decoration: none; /* Remove underline */
-    font-size: 1.2em; /* Font size */
-    transition: color 0.3s; /* Smooth color transition */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
 }
 
 a:hover {
-    color: #dddddd; /* Change color on hover */
+    color: #dddddd;
 }
 
-/* Styles for icons */
 i {
-    margin-right: 10px; /* Spacing between icon and text */
+    margin-right: 10px;
 }
 
-/* Styles for buttons */
 button {
-    background-color: #ffffff; /* Button background color */
-    border: none; /* Remove border */
-    color: #000000; /* Text color */
-    padding: 10px 20px; /* Padding */
+    background-color: #ffffff;
+    border: none;
+    color: #000000;
+    padding: 10px 20px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
-    font-size: 1em; /* Font size */
-    margin: 10px 0; /* Margin */
-    cursor: pointer; /* Pointer cursor on hover */
-    border-radius: 5px; /* Rounded corners */
-    font-family: 'Montserrat', sans-serif; /* Base font family */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    font-size: 1em;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 button:hover {
-    background-color: #dddddd; /* Change background color on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    background-color: #dddddd;
+    transform: scale(1.05);
 }
 
-/* Keyframes for fade-in animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -176,7 +163,6 @@ button:hover {
     }
 }
 
-/* Keyframes for fade-in-up animation */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -188,7 +174,6 @@ button:hover {
     }
 }
 
-/* Keyframes for slide-in animation */
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -200,29 +185,28 @@ button:hover {
     }
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Stack navigation items vertically */
+        flex-direction: column;
     }
 
     h1 {
-        font-size: 4em; /* Smaller font size for smaller screens */
-        white-space: nowrap; /* Prevents text wrapping */
-        overflow: hidden; /* Ensures text does not overflow */
-        text-overflow: ellipsis; /* Adds ellipsis if text overflows */
+        font-size: 4em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     h2 {
-        font-size: 2em; /* Smaller font size for smaller screens */
+        font-size: 2em;
     }
 
     button {
-        font-size: 0.8em; /* Smaller font size for smaller screens */
-        padding: 8px 16px; /* Smaller padding for smaller screens */
+        font-size: 0.8em;
+        padding: 8px 16px;
     }
 }
-/* Styles for the vertical carousel */
+
 .carousel {
     width: 100%;
     max-width: 600px;
@@ -240,7 +224,6 @@ button:hover {
     border-radius: 10px;
 }
 
-/* Styles for additional content */
 .show-tickets, .updates {
     margin-top: 20px;
     padding: 20px;
